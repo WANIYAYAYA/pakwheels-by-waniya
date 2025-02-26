@@ -85,7 +85,7 @@ export default function Home() {
           <div className="car1 flex flex-col justify-center items-center ml-7 p-4 bg-white rounded-md mb-5 shadow-md">
             <Link href={"/mercedes"}>
               <Image
-                className="w-60 hover:w-64 transition-transform"
+                className="w-60 hover:scale-105 transition-transform"
                 src={"/mercedes.jpg"}
                 alt="car pic"
                 width={110}
@@ -101,7 +101,7 @@ export default function Home() {
           <div className="car2 flex flex-col items-center p-4 bg-white rounded-md mb-5 shadow-md ">
             <Link href={"/gtr"}>
               <Image
-                className="w-60 hover:w-64 transition-transform"
+                className="w-60 hover:scale-105 transition-transform"
                 src={"/gtr.jpg"}
                 alt="car pic"
                 width={150}
@@ -116,7 +116,7 @@ export default function Home() {
           <div className="car3 flex flex-col items-center p-4 bg-white rounded-md mb-5 shadow-md">
             <Link href={"/rolls"}>
               <Image
-                className="w-60 hover:w-64 transition-transform"
+                className="w-60 hover:scale-105 transition-transform"
                 src={"/rolls.jpg"}
                 alt="car pic"
                 width={150}
@@ -131,7 +131,7 @@ export default function Home() {
           <div className="car4 flex flex-col items-center p-4 bg-white rounded-md mb-5 shadow-md">
             <Link href={"/jaguar"}>
               <Image
-                className="w-60 hover:w-64 transition-transform"
+                className="w-60 hover:scale-105 transition-transform"
                 src={"/jaguar.jpeg"}
                 alt="car pic"
                 width={150}

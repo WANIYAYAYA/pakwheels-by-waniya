@@ -4,23 +4,23 @@ import Link from 'next/link'
 const Header = () => {
   return(
  <header className="bg-blue-950 text-white h-auto py-4">
-  <div className="top-bar flex items-center justify-between mx-6 p-3 text-sm">
-    <p className="flex items-center gap-2">
+  <div className="top-bar md-flex md-items-center md-justify-between md-gap-14 md-p-3 md-text-sm">
+    <p className="md-flex md-items-center md-gap-2">
       <Image src="/phone.webp" alt="phone icon" width={20} height={20} />
       Download App via SMS
     </p>
-    <p className="text-sm">SIGN IN | SIGN UP</p>
+    <p className="md-text-sm">SIGN IN | SIGN UP</p>
   </div>
   
-  <div className="border-t-2 mx-6 border-gray-400 mb-4"></div>
+  <div className="md-border-t-2 md-mx-6 border-gray-400 md-mb-4"></div>
   
-  <div className="flex gap-20 items-center mx-8">
+  <div className="md-flex md-gap-20 md-items-center md-mx-8">
     <div className="logo">
     <Link href={"/"}> <Image className="w-40" src="/logo.webp" alt="PakWheels logo" height={80} width={80} /></Link> 
     </div>
     
     <nav className="nav-menu">
-      <ul className="flex gap-6 text-lg font-semibold">
+      <ul className="md-flex md-gap-6 md-text-lg font-semibold">
         <li>New Cars</li>
         <li>Used Cars</li>
         <li >Bikes</li>
