@@ -82,7 +82,7 @@ export default function Home() {
         </div>
         <div className="border-t-2 w-5"></div>
         <div className="flex bg-gray-200 gap-8 mt-20 mb- ml-2">
-          <div className="car1 flex flex-col items-center ml-7 p-4 bg-white rounded-md mb-5 shadow-md">
+          <div className="car1 flex flex-col justify-center items-center ml-7 p-4 bg-white rounded-md mb-5 shadow-md">
             <Link href={"/mercedes"}>
               <Image
                 className="w-60 hover:w-64 transition-transform"
