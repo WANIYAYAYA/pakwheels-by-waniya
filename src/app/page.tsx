@@ -4,8 +4,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      
-
       <div className="flex mt-10 gap-6 justify-center">
         <div className="border-t-2 border-gray-300 mt-4 w-80"></div>
 
@@ -16,7 +14,7 @@ export default function Home() {
         <div className="border-t-2 border-gray-300 mt-4 w-80"></div>
       </div>
 
-      <div className="flex justify-center gap-8 mt-10">
+      <div className="flex flex-col lg:flex-row justify-center gap-8 mt-10">
         <div className="box1 flex flex-col items-center p-6 shadow-md rounded-lg bg-gray-50">
           <h4 className="text-2xl font-semibold text-blue-600 mb-4">
             Post your Ad on PakWheels
@@ -81,8 +79,8 @@ export default function Home() {
           <div className="border-t-2 border-gray-600  w-16 ml-5 "></div> {/* Underline effect */}
         </div>
         <div className="border-t-2 w-5"></div>
-        <div className="flex bg-gray-200 gap-8 mt-20 mb- ml-2">
-          <div className="car1 flex flex-col justify-center items-center ml-7 p-4 bg-white rounded-md mb-5 shadow-md">
+        <div className="flex flex-col lg:flex-row justify-center  bg-gray-200 gap-8 mt-20 mb- ml-2">
+          <div className="car1 flex flex-col  items-center ml-7 p-4 bg-white rounded-md mb-5 shadow-md">
             <Link href={"/mercedes"}>
               <Image
                 className="w-60 hover:scale-105 transition-transform"
@@ -147,8 +145,8 @@ export default function Home() {
       </div>
 
     
-    </main>
-  );
-}
 
+   </main>
   
+);
+ } 

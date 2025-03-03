@@ -14,7 +14,7 @@ const Header = () => {
   
   <div className="border-t-2 mx-6 border-gray-400 mb-4"></div>
   
-  <div className="flex gap-20 items-center mx-8">
+  <div className="flex justify-between items-center mx-8">
     <div className="logo">
     <Link href={"/"}> <Image className="w-40" src="/logo.webp" alt="PakWheels logo" height={80} width={80} /></Link> 
     </div>
