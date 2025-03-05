@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white">
-   <div className="flex flex-row space-x-4">
+   <div className="sm:flex sm:flex-row  grid-cols-2 space-x-4">
   <div className="flex ml-8 mt-8 flex-col w-1/4">
     <h4 className="text-xl mb-5">CAR BY MAKE</h4>
     <span>Toyota Cars for Sale</span>

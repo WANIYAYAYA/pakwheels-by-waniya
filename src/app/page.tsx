@@ -37,12 +37,13 @@ export default function Home() {
             POST YOUR AD
           </button>
         </div>
-
         <div className="or-divider flex flex-col items-center justify-center">
           <div className="border-l-2 border-t-2 border-b-2 h-16 mb-4"></div>
           <div className="text-gray-600 font-semibold">OR</div>
           <div className="border-l-2 border-t-2 border-b-2 h-16 mt-4"></div>
         </div>
+
+
 
         <div className="secbox flex flex-col items-center p-6 shadow-md rounded-md bg-gray-50">
           <h4 className="text-2xl font-semibold text-blue-600 mb-4">
@@ -80,7 +81,7 @@ export default function Home() {
         </div>
         <div className="border-t-2 w-5"></div>
         <div className="flex flex-col lg:flex-row justify-center  bg-gray-200 gap-8 mt-20 mb- ml-2">
-          <div className="car1 flex flex-col  items-center ml-7 p-4 bg-white rounded-md mb-5 shadow-md">
+          <div className="car1 flex flex-col  items-center  p-4 bg-white rounded-md mb-5 shadow-md">
             <Link href={"/mercedes"}>
               <Image
                 className="w-60 hover:scale-105 transition-transform"
