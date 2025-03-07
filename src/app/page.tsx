@@ -37,10 +37,10 @@ export default function Home() {
             POST YOUR AD
           </button>
         </div>
-        <div className="or-divider flex flex-col items-center justify-center">
-          <div className="border-l-2 border-t-2 border-b-2 h-16 mb-4"></div>
+        <div className="or-divider flex sm:flex-col items-center justify-center">
+          <div className="border-l-2 flex-row border-t-2 border-b-2 h-16 mb-4"></div>
           <div className="text-gray-600 font-semibold">OR</div>
-          <div className="border-l-2 border-t-2 border-b-2 h-16 mt-4"></div>
+          <div className="border-l-2  flex-row border-t-2 border-b-2 h-16 mt-4"></div>
         </div>
 
 

@@ -7,8 +7,8 @@ const mercedes = () => {
     <div>
       
       <div className="flex flex-col items-center bg-gray-200 p-6">
-        <h1 className="text-3xl font-semibold text-center text-gray-800 border-b-2 border-gray-700 mt-4 mb-6">
-         MERCEDES BENZ SUV 2025 Price in Pakistan, Images, Reviews & Specs
+        <h1 className="text-3xl font-semibold text-center text-gray-800   mt-4 mb-6">
+        <u> MERCEDES BENZ SUV 2025 Price in Pakistan, Images, Reviews & Specs</u>
         </h1>
 
         <Image
@@ -19,20 +19,21 @@ const mercedes = () => {
           width={600}
         />
 
-        <div className="flex gap-6 mt-6 justify-center">
-          <button className="bg-blue-600 text-white rounded-md px-6 py-2 hover:bg-blue-700 transition ease-in-out duration-300">
-            Book a Test Drive
-          </button>
-          <button className="bg-white text-blue-600 border-2 border-blue-600 rounded-md px-6 py-2 hover:bg-blue-600 hover:text-white transition ease-in-out duration-300">
-            Request Bank Finance
-          </button>
-          <button className="bg-white text-blue-600 border-2 border-blue-600 rounded-md px-6 py-2 hover:bg-blue-600 hover:text-white transition ease-in-out duration-300">
-            Visit Place
-          </button>
-          <button className="bg-white text-blue-600 border-2 border-blue-600 rounded-md px-6 py-2 hover:bg-blue-600 hover:text-white transition ease-in-out duration-300">
-            Car Inspection
-          </button>
-        </div>
+<div className="grid grid-cols-2 gap-6 mt-6 sm:grid-cols-4 sm:flex sm:justify-center">
+  <button className="bg-blue-600 text-white rounded-md px-6 py-2 hover:bg-blue-700">
+    Book a Test Drive
+  </button>
+  <button className="bg-white text-blue-600 border-2 border-blue-600 rounded-md px-6 py-2 hover:bg-blue-600 hover:text-white">
+    Request Bank Finance
+  </button>
+  <button className="bg-white text-blue-600 border-2 border-blue-600 rounded-md px-6 py-2 hover:bg-blue-600 hover:text-white">
+    Visit Place
+  </button>
+  <button className="bg-white text-blue-600 border-2 border-blue-600 rounded-md px-6 py-2 hover:bg-blue-600 hover:text-white">
+    Car Inspection
+  </button>
+</div>
+
 
         <h3 className="text-2xl font-serif text-gray-700 mt-6 mb-4">Vehicle Description</h3>
 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-gray-600">

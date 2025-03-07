@@ -6,9 +6,9 @@ const from = () => {
     
         
         <div>
-        <div className=' mt-8  min-h-screen'>
-        <div className="flex justify-center items-center">
-      <form className='p-8 rounded-lg  w-96'>
+        <div className=' flex justify-center items-center  min-h-screen'>
+        <div>
+      <form className=' rounded-lg  w-96'>
         <h2 className="text-3xl font-bold text-center  text-black w-96">ENTER YOUR DETAILS</h2>
         <br />
         <input type="text" placeholder="Enter Your Name" className=" rounded w-96 py-2 px-3 mb-4 border border-blue-600" />

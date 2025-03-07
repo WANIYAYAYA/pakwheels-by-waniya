@@ -2,19 +2,18 @@ import React from 'react'
 import Header from '../components/Header'
 import Image from 'next/image'
 import Link from 'next/link'
-const Gtr = () => {
+const rolls = () => {
   return (
-    <div>
+    <div >
       
       <div className="flex flex-col items-center bg-gray-200 p-6">
-        <h1 className="text-3xl font-semibold text-center  text-gray-800 mt-4 mb-6">
-         <u> NISSAN GTR R-34 2025 Price in Pakistan, Images, Reviews & Specs</u>
+        <h1 className="text-3xl font-semibold text-center text-gray-800 mt-4 mb-6 ">
+         <u> ROLLS ROYCE 2025 Price in Pakistan, Images, Reviews & Specs</u>
         </h1>
-        
-        
+
         <Image
           className="w-96 mt-4 shadow-lg rounded-md"
-          src="/gtr.jpg"
+          src="/rolls.jpg"
           alt="Toyota Corolla 2024"
           height={350}
           width={600}
@@ -35,6 +34,7 @@ const Gtr = () => {
 </div>
 
        
+
         <h3 className="text-2xl font-serif text-gray-700 mt-6 mb-4">Vehicle Description</h3>
 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-gray-600">
   <div className="flex flex-col">
@@ -70,18 +70,14 @@ const Gtr = () => {
     <span>High Octane</span>
   </div>
 </div>
-
 <div className="mt-6">
-  <span className="text-green-600 font-sans text-4xl block mb-4">PKR 8,100,000</span>
-  <Link href={"/form"}><button className="bg-blue-600 text-white rounded-md px-8 py-3 mt-4 hover:bg-blue-700">
+  <span className="text-green-600 font-sans text-4xl block mb-4">PKR 27.62 CRORE</span>
+ <Link href={"/form"}> <button className="bg-blue-600 text-white rounded-md px-8 py-3 mt-4 ml-8 hover:bg-blue-700">
     Make Payment
   </button></Link>
 </div>
-
       </div>
     </div>
   )
 }
-
-export default Gtr
-
+export default rolls
