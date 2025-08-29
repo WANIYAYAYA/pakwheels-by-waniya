@@ -1,16 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
+import mercedes from "./mercedes/page";
 
 export default function Home() {
+
+  const carsData = [
+    { href: "/mercedes.jpg", src: "/mercedes.jpg", title: "MERCEDES-BENZ SUV", price: "11,500,000" },
+    { href: "/gtr.jpg", src: "/gtr.jpg", title: "NISSAN GTR", price: "2.62 CRORE" },
+    { href: "/rolls.jpg", src: "/rolls.jpg", title: "ROLLS ROYCE", price: "1.89 CRORE" },
+    { href: "/jaguar.jpeg", src: "/jaguar.jpeg", title: "JAGUAR", price: "19,500,000" }
+  ];
+  
   return (
     <main>
       <div className="flex mt-10 gap-6 justify-center">
         <div className="border-t-2 border-gray-300 mt-4 w-80"></div>
-
+  
         <h1 className="text-3xl font-semibold text-center text-gray-800">
           Sell Your Car on PakWheels and Get the Best Price
         </h1>
-
+  
         <div className="border-t-2 border-gray-300 mt-4 w-80"></div>
       </div>
 
@@ -69,85 +78,46 @@ export default function Home() {
         </div>
       </div>
 
+
+  
+
+
+
+      {/* Rest of your code... */}
+  
       <div className="bg-gray-200 min-h-screen">
-        <div className="featured-cars mt-20 ">
-          <h2 className="ml-5  pt-8 font-bold">FEATURED NEW CARS</h2>
+        <div className="featured-cars mt-20">
+          <h2 className="ml-5 pt-8 font-bold">FEATURED NEW CARS</h2>
           <ul className="flex gap-6 ml-5">
             <li className="font-bold">Popular</li>
             <li>Upcoming</li>
             <li>Newly Launched</li>
           </ul>
-          <div className="border-t-2 border-gray-600  w-16 ml-5 "></div> {/* Underline effect */}
+          <div className="border-t-2 border-gray-600 w-16 ml-5 "></div> {/* Underline effect */}
         </div>
         <div className="border-t-2 w-5"></div>
-        <div className="flex flex-col lg:flex-row justify-center  bg-gray-200 gap-8 mt-20 mb- ml-2">
-          <div className="car1 flex flex-col  items-center  p-4 bg-white rounded-md mb-5 shadow-md">
-            <Link href={"/mercedes"}>
-              <Image
-                className="w-60 hover:scale-105 transition-transform"
-                src={"/mercedes.jpg"}
-                alt="car pic"
-                width={110}
-                height={110}
-              />
-            </Link>
-            <div className="text-center mt-2">
-              <span className="text-blue-900 font-medium">MERCEDES-BENZ SUV</span>
-              <div className="text-green-800">PKR 11,500,000</div>
+  
+        {/* Mapping through carsData array */}
+        <div className="flex flex-col lg:flex-row justify-center bg-gray-200 gap-8 mt-20 mb- ml-2">
+          {carsData.map((car, index) => (
+            <div key={index} className="flex flex-col items-center p-4 bg-white rounded-md mb-5 shadow-md">
+              <Link href={`/${car.title}`}>
+                <Image
+                  className="w-60 hover:scale-105 transition-transform"
+                  src={car.src}
+                  alt={car.title}
+                  width={150}
+                  height={150}
+                />
+              </Link>
+              <div className="text-center mt-2">
+                <span className="text-blue-900 font-medium">{car.title}</span>
+                <div className="text-green-800">PKR {car.price}</div>
+              </div>
             </div>
-          </div>
-
-          <div className="car2 flex flex-col items-center p-4 bg-white rounded-md mb-5 shadow-md ">
-            <Link href={"/gtr"}>
-              <Image
-                className="w-60 hover:scale-105 transition-transform"
-                src={"/gtr.jpg"}
-                alt="car pic"
-                width={150}
-                height={150}
-              />
-            </Link>
-            <div className="text-center mt-6">
-              <span className="text-blue-900 font-medium">NISSAN GT-R R34</span>
-              <div className="text-green-800">PKR 8,100,000</div>
-            </div>
-          </div>
-          <div className="car3 flex flex-col items-center p-4 bg-white rounded-md mb-5 shadow-md">
-            <Link href={"/rolls"}>
-              <Image
-                className="w-60 hover:scale-105 transition-transform"
-                src={"/rolls.jpg"}
-                alt="car pic"
-                width={150}
-                height={150}
-              />
-            </Link>
-            <div className="text-center mt-2">
-              <span className="text-blue-900 font-medium">ROLLS ROYCE CULLINAN</span>
-              <div className="text-green-800">PKR 27.62 CRORE</div>
-            </div>
-          </div>
-          <div className="car4 flex flex-col items-center p-4 bg-white rounded-md mb-5 shadow-md">
-            <Link href={"/jaguar"}>
-              <Image
-                className="w-60 hover:scale-105 transition-transform"
-                src={"/jaguar.jpeg"}
-                alt="car pic"
-                width={150}
-                height={150}
-              />
-            </Link>
-            <div className="text-center mt-2">
-              <span className="text-blue-900 font-medium">JAGUAR SPORTS</span>
-              <div className="text-green-800">PKR 2.5 CRORE</div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-
-    
-
-   </main>
-  
-);
- } 
+    </main>
+  );
+}
